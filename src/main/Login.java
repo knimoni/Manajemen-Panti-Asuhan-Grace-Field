@@ -21,6 +21,7 @@ public class Login extends javax.swing.JFrame {
         initComponents();
         jTextField1.setBackground(new java.awt.Color(0,0,0,1));
         jPasswordField1.setBackground(new java.awt.Color(0,0,0,1));
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -190,7 +191,6 @@ public class Login extends javax.swing.JFrame {
         SetterGetter log = new SetterGetter();
         String password = new String(jPasswordField1.getPassword());
         log.setPassword(password);
-        log.setUsername(jTextField1.getText());
         log.setUsername(jTextField1.getText());
         String pass = log.getPassword();
         String user = log.getUsername();

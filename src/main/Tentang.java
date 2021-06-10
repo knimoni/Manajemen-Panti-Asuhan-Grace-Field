@@ -11,10 +11,26 @@ package main;
 public class Tentang extends javax.swing.JFrame {
 
     /**
-     * Creates new form Home
+     * Creates new form Tentang
      */
     public Tentang() {
         initComponents();
+        setLocationRelativeTo(null);
+        SetterGetter tentang = new SetterGetter();
+        SetterGetter tentang2 = new SetterGetter();
+        tentang.setRumah("'Rumah Grace Field' adalah rumah tinggal bagi anak-anak Yatim-Piatu, anak-anak terlantar dan anak-anak yang kurang mampu");
+        tentang2.setRumah("baik pria maupun wanita agar mereka menjadi anak-anak yang bertaqwa dan berguna bagi nusa dan bangsa.");
+        tentang.setFasilitas("Grace Field House adalah rumah bergaya Eropa, berdiri tiga lantai dengan atap biru dan dinding oranye terang. Di dalam rumah");
+        tentang2.setFasilitas("terdiri dari kafetaria, rumah sakit, kamar tidur, perpustakaan, ruang ujian dan kantor pengurus.");
+        tentang.setTataLetak("Di sekitar rumah adalah ladang berumput yang luas yang menjangkau hutan kecil di mana anak-anak yatim piatu biasanya menjadikan");
+        tentang2.setTataLetak("sebagai tempat memainkan permainan petak umpet dan gerbang yang berfungsi sebagai pintu masuk ke rumah.");
+        
+        rumah1.setText(String.valueOf(tentang.getRumah()));
+        rumah2.setText(String.valueOf(tentang2.getRumah()));
+        fasilitas1.setText(String.valueOf(tentang.getFasilitas()));
+        fasilitas2.setText(String.valueOf(tentang2.getFasilitas()));
+        tataletak1.setText(String.valueOf(tentang.getTataLetak()));
+        tataletak2.setText(String.valueOf(tentang2.getTataLetak()));
     }
 
     /**
@@ -33,16 +49,16 @@ public class Tentang extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        rumah2 = new javax.swing.JLabel();
+        rumah1 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        fasilitas2 = new javax.swing.JLabel();
+        fasilitas1 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
+        tataletak2 = new javax.swing.JLabel();
+        tataletak1 = new javax.swing.JLabel();
         GraceFieldHouse = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -116,15 +132,15 @@ public class Tentang extends javax.swing.JFrame {
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, 50));
         jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 340, 10));
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("baik pria maupun wanita agar mereka menjadi anak-anak yang bertaqwa dan berguna bagi nusa dan bangsa.  ");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, 20));
+        rumah2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        rumah2.setForeground(new java.awt.Color(255, 255, 255));
+        rumah2.setText("-");
+        jPanel1.add(rumah2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, 20));
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("'Rumah Grace Field' adalah rumah tinggal bagi anak-anak Yatim-Piatu, anak-anak terlantar dan anak-anak yang kurang mampu  ");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, 20));
+        rumah1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        rumah1.setForeground(new java.awt.Color(255, 255, 255));
+        rumah1.setText("-");
+        jPanel1.add(rumah1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, 20));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -132,15 +148,15 @@ public class Tentang extends javax.swing.JFrame {
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, -1, 30));
         jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 222, 90, 10));
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("terdiri dari kafetaria, rumah sakit, kamar tidur, perpustakaan, ruang ujian dan kantor pengurus.");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
+        fasilitas2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        fasilitas2.setForeground(new java.awt.Color(255, 255, 255));
+        fasilitas2.setText("-");
+        jPanel1.add(fasilitas2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Grace Field House adalah rumah bergaya Eropa, berdiri tiga lantai dengan atap biru dan dinding oranye terang. Di dalam rumah ");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, -1, -1));
+        fasilitas1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        fasilitas1.setForeground(new java.awt.Color(255, 255, 255));
+        fasilitas1.setText("-");
+        jPanel1.add(fasilitas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
@@ -148,15 +164,15 @@ public class Tentang extends javax.swing.JFrame {
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, -1, 30));
         jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 120, 20));
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("sebagai tempat memainkan permainan petak umpet dan gerbang yang berfungsi sebagai pintu masuk ke rumah.");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, -1, -1));
+        tataletak2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        tataletak2.setForeground(new java.awt.Color(255, 255, 255));
+        tataletak2.setText("-");
+        jPanel1.add(tataletak2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, -1, -1));
 
-        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Di sekitar rumah adalah ladang berumput yang luas yang menjangkau hutan kecil di mana anak-anak yatim piatu biasanya menjadikan");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, -1, -1));
+        tataletak1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        tataletak1.setForeground(new java.awt.Color(255, 255, 255));
+        tataletak1.setText("-");
+        jPanel1.add(tataletak1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, -1, -1));
 
         GraceFieldHouse.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/image/Grace_Field_House_anime_1.png"))); // NOI18N
         GraceFieldHouse.setText("jLabel1");
@@ -219,30 +235,33 @@ public class Tentang extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
-
+        
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> {
-            new Tentang().setVisible(true);
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new Tentang().setVisible(true);
+            }
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel GraceFieldHouse;
+    private javax.swing.JLabel fasilitas1;
+    private javax.swing.JLabel fasilitas2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JLabel rumah1;
+    private javax.swing.JLabel rumah2;
+    private javax.swing.JLabel tataletak1;
+    private javax.swing.JLabel tataletak2;
     // End of variables declaration//GEN-END:variables
 }

@@ -22,10 +22,11 @@ public class Input1 extends javax.swing.JFrame {
     
 
     /**
-     * Creates new form DaftarAnak
+     * Creates new form Input1
      */
     public Input1() {
         initComponents();
+        setLocationRelativeTo(null);
         lakii.setActionCommand("Laki - Laki");
         perempuann.setActionCommand("Perempuan");
         lakii.setSelected(true);
@@ -223,6 +224,7 @@ public class Input1 extends javax.swing.JFrame {
         
         namaa.setText(namaa.getText());
         log.setNama(namaa.getText());
+        int Umur = Integer.parseInt(umurr.getText());
         umurr.setText(umurr.getText());
         log.setUmur(umurr.getText());
         String Goldar = goldarr.getSelectedItem().toString();
@@ -231,6 +233,7 @@ public class Input1 extends javax.swing.JFrame {
         log.setTanggall(Tanggall);
         String JenisKelamin = jeniskelamin.getSelection().getActionCommand();
         log.setJenisKelamin(JenisKelamin);
+        int Tinggi = Integer.parseInt(tinggii.getText());
         tinggii.setText(tinggii.getText());
         log.setTinggi(tinggii.getText());
         if (namaa.getText().trim().isEmpty() || umurr.getText().trim().isEmpty() || (tinggii.getText().trim().isEmpty() || "Pilih Golongan Darah...".equals(Goldar)) || Tanggall.trim().isEmpty()){
@@ -239,15 +242,14 @@ public class Input1 extends javax.swing.JFrame {
         }
         else {
             JOptionPane.showMessageDialog(null, "data berhasil ditambahkan", "SUCCESSFULLY", HEIGHT);
-        lihat.setVisible(true);    
+        lihat.show();    
         lihat.pack();
         lihat.setLocationRelativeTo(null);
-        lihat.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         lihat.Nama.setText(log.getNama());
         lihat.Umur.setText(log.getUmur());
-        lihat.Goldar.setText(log.getGoldar());
         lihat.Tanggal.setText(log.getTanggall());
+        lihat.Goldar.setText(log.getGoldar());
         lihat.JenisKelamin.setText(log.getJenisKelamin());
         lihat.Tinggi.setText(log.getTinggi());
         }        

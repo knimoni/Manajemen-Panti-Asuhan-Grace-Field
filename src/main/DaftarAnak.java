@@ -24,6 +24,7 @@ public class DaftarAnak extends javax.swing.JFrame {
      */
     public DaftarAnak() {
         initComponents();
+        setLocationRelativeTo(null);
         laki.setActionCommand("Laki - Laki");
         perempuan.setActionCommand("Perempuan");
         laki.setSelected(true);
@@ -263,8 +264,8 @@ public class DaftarAnak extends javax.swing.JFrame {
 
         String Nama = model.getValueAt(index, 0).toString();
         log.setNama(Nama);
-        String TahunMasuk = model.getValueAt(index, 1).toString();
-        log.setTahunMasuk(TahunMasuk);
+        int TahunMasuk = Integer.parseInt((String) model.getValueAt(index, 1));
+        log.setTahunMasuk(String.valueOf(TahunMasuk));
         String Goldar = model.getValueAt(index, 2).toString();
         log.setGoldar(Goldar);
         String Tanggall = model.getValueAt(index, 3).toString();
@@ -293,11 +294,12 @@ public class DaftarAnak extends javax.swing.JFrame {
         namaanak.setText(namaanak.getText());
         log.setNama(namaanak.getText());
         tahun.setText(tahun.getText());
+        int TahunMasuk = Integer.parseInt(tahun.getText());
         log.setTahunMasuk(tahun.getText());
         String Goldar = goldar.getSelectedItem().toString();
         log.setGoldar (Goldar);
         String Tanggall = ((JTextField)tanggal.getDateEditor().getUiComponent()).getText();
-        log.setTanggall(Tanggall);
+        log.setTanggall (Tanggall);
         String JenisKelamin = jeniskelamin.getSelection().getActionCommand();
         log.setJenisKelamin(JenisKelamin);
         if (namaanak.getText().trim().isEmpty() || (tahun.getText().trim().isEmpty() || "Pilih Golongan Darah...".equals(Goldar)) || Tanggall.trim().isEmpty()){
@@ -328,10 +330,6 @@ public class DaftarAnak extends javax.swing.JFrame {
         tahun.setText("");
         laki.setSelected(true);
     }//GEN-LAST:event_clearActionPerformed
-
-    private void tahunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tahunActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tahunActionPerformed
 
     private void lakiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lakiActionPerformed
         // TODO add your handling code here:
@@ -367,7 +365,7 @@ public class DaftarAnak extends javax.swing.JFrame {
     private void jLabel17MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel17MousePressed
         // TODO add your handling code here:
         this.hide();
-        Beranda balik = new Beranda();
+        NormanDkk balik = new NormanDkk();
         balik.setVisible(true);
     }//GEN-LAST:event_jLabel17MousePressed
 
@@ -385,6 +383,10 @@ public class DaftarAnak extends javax.swing.JFrame {
         xx = evt.getX();
         xy = evt.getY();
     }//GEN-LAST:event_jPanel2MousePressed
+
+    private void tahunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tahunActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tahunActionPerformed
 
     /**
      * @param args the command line arguments

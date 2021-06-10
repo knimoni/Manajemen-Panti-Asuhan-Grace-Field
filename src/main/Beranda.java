@@ -14,10 +14,11 @@ import javax.swing.JPanel;
 public class Beranda extends javax.swing.JFrame {
 
     /**
-     * Creates new form Home
+     * Creates new form Beranda
      */
     public Beranda() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -301,7 +302,7 @@ public class Beranda extends javax.swing.JFrame {
 
     private void jPanel9MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MousePressed
         // TODO add your handling code here:
-        new DaftarAnak().setVisible(true);
+        new NormanDkk().setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jPanel9MousePressed
 

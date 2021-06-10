@@ -11,10 +11,10 @@ package main;
  */
 public class SetterGetter {
     //atribut
-    private String Username, Password, Nama, TahunMasuk, Tanggall, JenisKelamin, Goldar, Keterangan, Umur, Tinggi;
-    
+    private String Username, Tanggall, TahunMasuk, Password, Nama, JenisKelamin, Goldar, Keterangan, Umur, Tinggi;
+    private String Rumah, Fasilitas, TataLetak;
     //setter
-    protected void setUsername (String Username) {
+        protected void setUsername (String Username) {
         this.Username = Username;
     }
     protected void setPassword (String Password) {
@@ -44,7 +44,16 @@ public class SetterGetter {
     public void setTinggi(String Tinggi){
         this.Tinggi = Tinggi;
     }
-    
+    //setter tentang
+    public void setRumah(String Rumah){
+        this.Rumah = Rumah;
+    }
+    public void setFasilitas (String Fasilitas){
+        this.Fasilitas = Fasilitas;
+    }
+    public void setTataLetak (String TataLetak){
+        this.TataLetak = TataLetak;
+    }
     //getter
     protected String getUsername(){
         return Username;
@@ -75,5 +84,15 @@ public class SetterGetter {
     }
     public String getTinggi(){
         return Tinggi;
+    }
+    //getter tentang
+    public String getRumah(){
+        return Rumah;
+    }
+    public String getFasilitas(){
+        return Fasilitas;
+    }
+    public String getTataLetak(){
+        return TataLetak;
     }
 }

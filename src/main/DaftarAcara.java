@@ -19,10 +19,11 @@ public class DaftarAcara extends javax.swing.JFrame {
     LihatAcara lihat = new LihatAcara();
 
     /**
-     * Creates new form DaftarAnak
+     * Creates new form DaftarAcara
      */
     public DaftarAcara() {
         initComponents();
+        setLocationRelativeTo(null);
     }
  
     /**

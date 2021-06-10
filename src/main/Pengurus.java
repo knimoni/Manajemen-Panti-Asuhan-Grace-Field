@@ -17,6 +17,7 @@ public class Pengurus extends javax.swing.JFrame {
      */
     public Pengurus() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -185,6 +186,7 @@ public class Pengurus extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_jLabel16MousePressed
     int xx, xy;
+    String nama;
     private void jPanel2MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseDragged
         // TODO add your handling code here:
         int x = evt.getXOnScreen();
