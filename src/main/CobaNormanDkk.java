@@ -5,17 +5,20 @@
  */
 package main;
 
+import java.awt.Color;
+
 /**
  *
  * @author NAURA SHARFINA AZARINE!!!
  */
-public class NormanDkk extends javax.swing.JFrame {
+public class CobaNormanDkk extends javax.swing.JFrame {
 
     /**
      * Creates new form NormanDkk
      */
-    public NormanDkk() {
+    public CobaNormanDkk() {
         initComponents();
+        jScrollPane1.getViewport();
         setLocationRelativeTo(null);
         //Emma
         SetterGetter anak1 = new SetterGetter();
@@ -80,7 +83,8 @@ public class NormanDkk extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jPanel3 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -94,21 +98,6 @@ public class NormanDkk extends javax.swing.JFrame {
         Goldar = new javax.swing.JLabel();
         Tinggi = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
-        Nama2 = new javax.swing.JLabel();
-        JenisKelamin2 = new javax.swing.JLabel();
-        Umur2 = new javax.swing.JLabel();
-        Tanggal2 = new javax.swing.JLabel();
-        Goldar2 = new javax.swing.JLabel();
-        Tinggi2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
@@ -123,7 +112,21 @@ public class NormanDkk extends javax.swing.JFrame {
         Tinggi3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         Tambah = new javax.swing.JButton();
-        BG = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        Nama2 = new javax.swing.JLabel();
+        JenisKelamin2 = new javax.swing.JLabel();
+        Umur2 = new javax.swing.JLabel();
+        Tanggal2 = new javax.swing.JLabel();
+        Goldar2 = new javax.swing.JLabel();
+        Tinggi2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        BG2 = new javax.swing.JLabel();
+        BG1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -176,79 +179,83 @@ public class NormanDkk extends javax.swing.JFrame {
                 .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1059, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 224, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel1))
+                    .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1310, 30));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 480, 30));
 
-        jPanel1.setBackground(new java.awt.Color(0, 0, 0, 80));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jScrollPane1.setBackground(new java.awt.Color(102, 255, 51));
+        jScrollPane1.setBorder(null);
+        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+
+        jPanel3.setBackground(new java.awt.Color(0, 0, 0, 80));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Nama");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 300, -1, -1));
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 320, -1, -1));
 
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Jenis Kelamin ");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, -1, -1));
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 440, -1, -1));
 
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Umur");
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 340, -1, -1));
+        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, -1, -1));
 
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Tanggal Lahir");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 460, -1, 20));
+        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 480, -1, 20));
 
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Golongan Darah");
-        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, -1, 20));
+        jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 400, -1, 20));
 
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Tinggi Badan ");
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 500, -1, 20));
+        jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 520, -1, 20));
 
         Nama.setForeground(new java.awt.Color(255, 255, 255));
         Nama.setText(":");
         Nama.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel1.add(Nama, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 300, -1, -1));
+        jPanel3.add(Nama, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 320, -1, -1));
 
         JenisKelamin.setForeground(new java.awt.Color(255, 255, 255));
         JenisKelamin.setText(":");
-        jPanel1.add(JenisKelamin, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 420, -1, -1));
+        jPanel3.add(JenisKelamin, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 440, -1, -1));
 
         Umur.setForeground(new java.awt.Color(255, 255, 255));
         Umur.setText(":");
-        jPanel1.add(Umur, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 340, -1, -1));
+        jPanel3.add(Umur, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 360, -1, -1));
 
         Tanggal.setForeground(new java.awt.Color(255, 255, 255));
         Tanggal.setText(":");
-        jPanel1.add(Tanggal, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 460, -1, 20));
+        jPanel3.add(Tanggal, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 480, -1, 20));
 
         Goldar.setForeground(new java.awt.Color(255, 255, 255));
         Goldar.setText(":");
-        jPanel1.add(Goldar, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 380, -1, 20));
+        jPanel3.add(Goldar, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 400, -1, 20));
 
         Tinggi.setForeground(new java.awt.Color(255, 255, 255));
         Tinggi.setText(":");
-        jPanel1.add(Tinggi, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 500, -1, 20));
+        jPanel3.add(Tinggi, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 520, -1, 20));
 
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/image/Emma_on.png"))); // NOI18N
@@ -258,125 +265,56 @@ public class NormanDkk extends javax.swing.JFrame {
                 jLabel5MousePressed(evt);
             }
         });
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 180, 240));
-
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 420, 650));
-
-        jPanel4.setBackground(new java.awt.Color(0, 0, 0, 80));
-        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel24.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel24.setText("Nama");
-        jPanel4.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 300, -1, -1));
-
-        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel25.setText("Jenis Kelamin ");
-        jPanel4.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, -1, -1));
-
-        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel26.setText("Umur");
-        jPanel4.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 340, -1, -1));
-
-        jLabel27.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel27.setText("Tanggal Lahir");
-        jPanel4.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 460, -1, 20));
-
-        jLabel28.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel28.setText("Golongan Darah");
-        jPanel4.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, -1, 20));
-
-        jLabel29.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel29.setText("Tinggi Badan ");
-        jPanel4.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 500, -1, 20));
-
-        Nama2.setForeground(new java.awt.Color(255, 255, 255));
-        Nama2.setText(":");
-        Nama2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel4.add(Nama2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 300, -1, -1));
-
-        JenisKelamin2.setForeground(new java.awt.Color(255, 255, 255));
-        JenisKelamin2.setText(":");
-        jPanel4.add(JenisKelamin2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 420, -1, -1));
-
-        Umur2.setForeground(new java.awt.Color(255, 255, 255));
-        Umur2.setText(":");
-        jPanel4.add(Umur2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 340, -1, -1));
-
-        Tanggal2.setForeground(new java.awt.Color(255, 255, 255));
-        Tanggal2.setText(":");
-        jPanel4.add(Tanggal2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 460, -1, 20));
-
-        Goldar2.setForeground(new java.awt.Color(255, 255, 255));
-        Goldar2.setText(":");
-        jPanel4.add(Goldar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 380, -1, 20));
-
-        Tinggi2.setForeground(new java.awt.Color(255, 255, 255));
-        Tinggi2.setText(":");
-        jPanel4.add(Tinggi2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 500, -1, 20));
-
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/image/Ray-Anime.png"))); // NOI18N
-        jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
-        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jLabel3MousePressed(evt);
-            }
-        });
-        jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 180, 240));
-
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 30, 470, 650));
-
-        jPanel5.setBackground(new java.awt.Color(0, 0, 0, 80));
-        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, 180, 240));
 
         jLabel30.setForeground(new java.awt.Color(255, 255, 255));
         jLabel30.setText("Nama");
-        jPanel5.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 300, -1, -1));
+        jPanel3.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 900, -1, -1));
 
         jLabel31.setForeground(new java.awt.Color(255, 255, 255));
         jLabel31.setText("Jenis Kelamin ");
-        jPanel5.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, -1, -1));
+        jPanel3.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 1020, -1, -1));
 
         jLabel32.setForeground(new java.awt.Color(255, 255, 255));
         jLabel32.setText("Umur");
-        jPanel5.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 340, -1, -1));
+        jPanel3.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 940, -1, -1));
 
         jLabel33.setForeground(new java.awt.Color(255, 255, 255));
         jLabel33.setText("Tanggal Lahir");
-        jPanel5.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 460, -1, 20));
+        jPanel3.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 1060, -1, 20));
 
         jLabel34.setForeground(new java.awt.Color(255, 255, 255));
         jLabel34.setText("Golongan Darah");
-        jPanel5.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, -1, 20));
+        jPanel3.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 980, -1, 20));
 
         jLabel35.setForeground(new java.awt.Color(255, 255, 255));
         jLabel35.setText("Tinggi Badan ");
-        jPanel5.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 500, -1, 20));
+        jPanel3.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 1100, -1, 20));
 
         Nama3.setForeground(new java.awt.Color(255, 255, 255));
         Nama3.setText(":");
         Nama3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel5.add(Nama3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 300, -1, -1));
+        jPanel3.add(Nama3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 900, -1, -1));
 
         JenisKelamin3.setForeground(new java.awt.Color(255, 255, 255));
         JenisKelamin3.setText(":");
-        jPanel5.add(JenisKelamin3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 420, -1, -1));
+        jPanel3.add(JenisKelamin3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 1020, -1, -1));
 
         Umur3.setForeground(new java.awt.Color(255, 255, 255));
         Umur3.setText(":");
-        jPanel5.add(Umur3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 340, -1, -1));
+        jPanel3.add(Umur3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 940, -1, -1));
 
         Tanggal3.setForeground(new java.awt.Color(255, 255, 255));
         Tanggal3.setText(":");
-        jPanel5.add(Tanggal3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 460, -1, 20));
+        jPanel3.add(Tanggal3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 1060, -1, 20));
 
         Goldar3.setForeground(new java.awt.Color(255, 255, 255));
         Goldar3.setText(":");
-        jPanel5.add(Goldar3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 380, -1, 20));
+        jPanel3.add(Goldar3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 980, -1, 20));
 
         Tinggi3.setForeground(new java.awt.Color(255, 255, 255));
         Tinggi3.setText(":");
-        jPanel5.add(Tinggi3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 500, -1, 20));
+        jPanel3.add(Tinggi3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 1100, -1, 20));
 
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/image/Norman_on (1).png"))); // NOI18N
@@ -386,7 +324,7 @@ public class NormanDkk extends javax.swing.JFrame {
                 jLabel4MousePressed(evt);
             }
         });
-        jPanel5.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 180, 240));
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 620, 180, 240));
 
         Tambah.setText("Tambah");
         Tambah.addActionListener(new java.awt.event.ActionListener() {
@@ -394,13 +332,78 @@ public class NormanDkk extends javax.swing.JFrame {
                 TambahActionPerformed(evt);
             }
         });
-        jPanel5.add(Tambah, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 580, -1, -1));
+        jPanel3.add(Tambah, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 1710, -1, -1));
 
-        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 30, 420, 650));
+        jLabel24.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel24.setText("Nama");
+        jPanel3.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 1470, -1, -1));
 
-        BG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/image/wp3951108_1.jpg"))); // NOI18N
-        BG.setOpaque(true);
-        getContentPane().add(BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 30, 1350, 650));
+        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel25.setText("Jenis Kelamin ");
+        jPanel3.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 1590, -1, -1));
+
+        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel26.setText("Umur");
+        jPanel3.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 1510, -1, -1));
+
+        jLabel27.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel27.setText("Tanggal Lahir");
+        jPanel3.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 1630, -1, 20));
+
+        jLabel28.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel28.setText("Golongan Darah");
+        jPanel3.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 1550, -1, 20));
+
+        jLabel29.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel29.setText("Tinggi Badan ");
+        jPanel3.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 1670, -1, 20));
+
+        Nama2.setForeground(new java.awt.Color(255, 255, 255));
+        Nama2.setText(":");
+        Nama2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel3.add(Nama2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 1470, -1, -1));
+
+        JenisKelamin2.setForeground(new java.awt.Color(255, 255, 255));
+        JenisKelamin2.setText(":");
+        jPanel3.add(JenisKelamin2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 1590, -1, -1));
+
+        Umur2.setForeground(new java.awt.Color(255, 255, 255));
+        Umur2.setText(":");
+        jPanel3.add(Umur2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 1510, -1, -1));
+
+        Tanggal2.setForeground(new java.awt.Color(255, 255, 255));
+        Tanggal2.setText(":");
+        jPanel3.add(Tanggal2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 1630, -1, 20));
+
+        Goldar2.setForeground(new java.awt.Color(255, 255, 255));
+        Goldar2.setText(":");
+        jPanel3.add(Goldar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 1550, -1, 20));
+
+        Tinggi2.setForeground(new java.awt.Color(255, 255, 255));
+        Tinggi2.setText(":");
+        jPanel3.add(Tinggi2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 1670, -1, 20));
+
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/image/Ray-Anime.png"))); // NOI18N
+        jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jLabel3MousePressed(evt);
+            }
+        });
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 1190, 180, 240));
+
+        BG2.setBackground(new java.awt.Color(0, 0, 0, 80));
+        BG2.setOpaque(true);
+        jPanel3.add(BG2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-340, 0, 910, 1800));
+
+        BG1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/image/wp3951108 (1).jpg"))); // NOI18N
+        BG1.setOpaque(true);
+        jPanel3.add(BG1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-340, 0, 910, -1));
+
+        jScrollPane1.setViewportView(jPanel3);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 480, 650));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -451,7 +454,7 @@ public class NormanDkk extends javax.swing.JFrame {
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         // TODO add your handling code here:
         this.hide();
-        CobaNormanDkk balik = new CobaNormanDkk();
+        NormanDkk balik = new NormanDkk();
         balik.setVisible(true);
     }//GEN-LAST:event_jLabel1MouseClicked
 
@@ -472,14 +475,16 @@ public class NormanDkk extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(NormanDkk.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CobaNormanDkk.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(NormanDkk.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CobaNormanDkk.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(NormanDkk.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CobaNormanDkk.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(NormanDkk.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CobaNormanDkk.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
@@ -488,13 +493,14 @@ public class NormanDkk extends javax.swing.JFrame {
             public void run() {
                
                 
-                new NormanDkk().setVisible(true);
+                new CobaNormanDkk().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel BG;
+    private javax.swing.JLabel BG1;
+    private javax.swing.JLabel BG2;
     public javax.swing.JLabel Goldar;
     public javax.swing.JLabel Goldar2;
     public javax.swing.JLabel Goldar3;
@@ -539,9 +545,8 @@ public class NormanDkk extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel3;
+    public javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }

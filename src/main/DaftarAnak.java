@@ -365,7 +365,7 @@ public class DaftarAnak extends javax.swing.JFrame {
     private void jLabel17MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel17MousePressed
         // TODO add your handling code here:
         this.hide();
-        NormanDkk balik = new NormanDkk();
+        CobaNormanDkk balik = new CobaNormanDkk();
         balik.setVisible(true);
     }//GEN-LAST:event_jLabel17MousePressed
 

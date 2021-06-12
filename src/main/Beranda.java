@@ -302,7 +302,7 @@ public class Beranda extends javax.swing.JFrame {
 
     private void jPanel9MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MousePressed
         // TODO add your handling code here:
-        new NormanDkk().setVisible(true);
+        new CobaNormanDkk().setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jPanel9MousePressed
 
