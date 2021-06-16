@@ -5,6 +5,13 @@
  */
 package main;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import sun.audio.AudioPlayer;
+import sun.audio.AudioStream;
+
 /**
  *
  * @author NAURA SHARFINA AZARINE!!!
@@ -228,6 +235,11 @@ public class NormanDkk extends javax.swing.JFrame {
         Nama.setForeground(new java.awt.Color(255, 255, 255));
         Nama.setText(":");
         Nama.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        Nama.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                NamaMousePressed(evt);
+            }
+        });
         jPanel1.add(Nama, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 300, -1, -1));
 
         JenisKelamin.setForeground(new java.awt.Color(255, 255, 255));
@@ -253,11 +265,6 @@ public class NormanDkk extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/image/Emma_on.png"))); // NOI18N
         jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
-        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jLabel5MousePressed(evt);
-            }
-        });
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 180, 240));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 420, 650));
@@ -317,11 +324,6 @@ public class NormanDkk extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/image/Ray-Anime.png"))); // NOI18N
         jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
-        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jLabel3MousePressed(evt);
-            }
-        });
         jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 180, 240));
 
         getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 30, 470, 650));
@@ -381,11 +383,6 @@ public class NormanDkk extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/image/Norman_on (1).png"))); // NOI18N
         jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
-        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jLabel4MousePressed(evt);
-            }
-        });
         jPanel5.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 180, 240));
 
         Tambah.setText("Tambah");
@@ -430,18 +427,6 @@ public class NormanDkk extends javax.swing.JFrame {
         balik.setVisible(true);
     }//GEN-LAST:event_jLabel17MousePressed
 
-    private void jLabel3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MousePressed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel3MousePressed
-
-    private void jLabel4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MousePressed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel4MousePressed
-
-    private void jLabel5MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MousePressed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel5MousePressed
-
     private void TambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TambahActionPerformed
         // TODO add your handling code here:
         new DaftarAnak().setVisible(true);
@@ -454,6 +439,19 @@ public class NormanDkk extends javax.swing.JFrame {
         CobaNormanDkk balik = new CobaNormanDkk();
         balik.setVisible(true);
     }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void NamaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NamaMousePressed
+        // TODO add your handling code here:
+        InputStream in ;
+        try {
+
+            in = new FileInputStream(new File("src\\main\\audio\\Norman''Emma''.wav"));
+            AudioStream ad = new AudioStream(in);
+            AudioPlayer.player.start(ad);
+        } catch (IOException e) {
+
+        }
+    }//GEN-LAST:event_NamaMousePressed
 
     /**
      * @param args the command line arguments
